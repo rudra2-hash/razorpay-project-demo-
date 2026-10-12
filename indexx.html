@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Online Store</title>
+
+    <link rel="stylesheet" href="stylee.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🛍️ <span>ShopEase</span>
+        </div>
+
+        <div class="cart">
+            🛒 Cart <span id="cartCount">0</span>
+        </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-tag">QUALITY PRODUCTS • FAST DELIVERY</p>
+
+            <h1>
+                Shop Smart.
+                <br>
+                Shop <span>ShopEase.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover quality products at affordable prices
+                with a simple and secure shopping experience.
+            </p>
+
+            <button class="shop-button" onclick="scrollToProducts()">
+                Shop Now →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS SECTION -->
+
+    <main class="products-section" id="products">
+
+        <div class="section-heading">
+
+            <p>OUR COLLECTION</p>
+
+            <h2>Featured Products</h2>
+
+            <span>Handpicked products for you</span>
+
+        </div>
+
+
+        <div class="products-container">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card" >
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+                        alt="White Sneakers">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Classic Sneakers</h3>
+
+                    <p>
+                        Comfortable and stylish sneakers
+                        perfect for everyday wear.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="price">₹500</span>
+
+                        <button class="add-button" 
+                        data-name="Classic Sneakers"
+                        data-price="500">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                        alt="Wireless Headphones">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Wireless Headphones</h3>
+
+                    <p>
+                        Crystal clear sound with
+                        long-lasting battery life.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="price">₹1,200</span>
+
+                        <button class="add-button"
+                           data-name="Wireless Headphones"
+                        data-price="1200">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+                        alt="Smart Watch">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Smart Watch</h3>
+
+                    <p>
+                        Track your fitness, stay connected
+                        and manage your day.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="price">₹800</span>
+
+                        <button class="add-button"  data-name="Smart Watch"
+                        data-price="800">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80"
+                        alt="Travel Backpack">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Travel Backpack</h3>
+
+                    <p>
+                        Spacious, durable and designed
+                        for everyday adventures.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="price">₹1,000</span>
+
+                        <button class="add-button"  data-name="Travel Backpack"
+                        data-price="1000">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=600&q=80"
+                        alt="Sunglasses">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Classic Sunglasses</h3>
+
+                    <p>
+                        Stylish design with UV protection
+                        for everyday use.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="price">₹700</span>
+
+                        <button class="add-button"  data-name="Classic Sunglasses"
+                        data-price="700">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 6 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=600&q=80"
+                        alt="Leather Wallet">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Leather Wallet</h3>
+
+                    <p>
+                        Premium design with multiple
+                        compartments for your essentials.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="price">₹600</span>
+
+                        <button class="add-button"  data-name="Leather Wallet"
+                        data-price="600">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- CHECKOUT BUTTON -->
+
+    <div class="checkout-container" >
+
+        <button class="checkout-button" onclick="goToCheckout()">
+            🛒 Go to Checkout →
+        </button>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+      
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <h2>🛍️ ShopEase</h2>
+
+            <p>
+                Your simple destination for
+                quality products.
+            </p>
+
+        </div>
+
+
+        <div class="footer-contact">
+
+            <h3>Contact Us</h3>
+
+            <p>
+                📞
+                <a href="tel:+919876543210">
+                    +91 6284147687
+                </a>
+            </p>
+
+            <p>
+                ✉️
+               <a href="https://mail.google.com/mail/?view=cm&fs=1&to=behlrudra90@gmail.com"
+   target="_blank">
+    support@shopease.com
+</a>
+            </p>
+
+            <p>
+                📍
+                <a href="https://www.google.com/maps"
+                   target="_blank">
+                    Jalandhar, Punjab, India
+                </a>
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <p>Home</p>
+            <p>Products</p>
+            <p>Contact</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 ShopEase. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+    <script src="scriptt.js"></script>
+
+</body>
+
+</html>
+

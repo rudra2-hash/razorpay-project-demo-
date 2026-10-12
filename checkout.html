@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+    <div id="pay-status"  class="checkout-container">
+
+        <h1>Checkout</h1>
+
+        <h2>Order Summary</h2>
+
+        <div id="product-summary">
+            
+        </div>
+
+        <div class="total-section">
+
+            <h2>Total</h2>
+
+            <p id="total-price">₹0</p>
+
+        </div>
+
+        <button id="payment-button">
+            Proceed to Payment
+        </button>
+
+    </div>
+
+    <script src="checkout.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+
+</body>
+
+</html>
