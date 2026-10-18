@@ -70,7 +70,7 @@ app.post("/verify-payment", (req, res) => {
     const body = orderId + "|" + paymentId;
 
     const expectedSignature = crypto
-        .createHmac("sha256", "hjuV4L5kVFE1nSNVhShFB3U5")
+        .createHmac("sha256", process.env.RAZORPAY_KEY_SECRET)
         .update(body)
         .digest("hex");
 
@@ -96,7 +96,8 @@ app.post("/verify-payment", (req, res) => {
 
 });
 
-app.listen(3000, () => {
-    console.log("Server is running on port 3000");
-});
+const PORT = process.env.PORT || 3000;
 
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
