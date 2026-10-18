@@ -32,7 +32,7 @@ cart.forEach(function(product) {
 totalPrice.textContent = "₹" + total;
 
 
-document.getElementById("payment-button").onclick = function() { fetch("http://localhost:3000/create-order",
+document.getElementById("payment-button").onclick = function() { fetch("https://razorpay-project-backend.onrender.com/create-order",
      { method: "POST",
      headers: { "Content-Type": "application/json" }, 
      body: JSON.stringify({ amount: total }) })
@@ -50,7 +50,7 @@ document.getElementById("payment-button").onclick = function() { fetch("http://l
 
             handler: function(response) {
 
-        fetch("http://localhost:3000/verify-payment", {
+        fetch("https://razorpay-project-backend.onrender.com/verify-payment", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
